@@ -15,7 +15,7 @@ import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
     <Routes>
       {/* Layout 是共用外框（Navbar / Footer） */}
       <Route element={<Layout />}>
